@@ -1,0 +1,132 @@
+body {
+	font-family: Open Sans;
+	/* font-size: 16pt; */
+	background: #B5DCFC;
+}
+
+/* Background image */
+
+img {
+	position: fixed;
+	max-width: 102vw;
+	/* max-height: 100vh; */
+	display: block;
+	margin-left: -1vw;
+	margin-top: -1vw;
+	z-index: -1;
+}
+
+/* In which tags to center the text */
+.timetable {
+	/* border: solid; */
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	/* height: 90vh; */
+}
+
+.day {
+	text-align: center;
+	/* max-width: 16cqmax; */
+	min-width: 30cqmax;
+	background: rgba(255, 255, 255, .4);
+	border-radius: 3mm;
+	padding: 2mm;
+	margin: 1mm;
+	/* height: 90vh; */
+}
+
+.day_name {
+	background: #FBB81F;
+	border-radius: 2mm;
+	padding: 1mm;
+	font-size: larger;
+	font-weight: bold;
+	color: white;
+}
+
+.flex_group {
+	display: flex;
+	justify-content: space-between;
+	/* border: solid #FBB81F; */
+	/* min-height: 170px; */
+}
+
+.height_restr_raised {
+	min-height: auto;
+}
+
+.club {
+	background: #9DA7EF;
+	color: white;
+	padding: 1.5mm;
+	margin: auto .5mm;
+	margin-top: 1mm;
+	min-width: 10cqmax;
+	border-radius: 3mm;
+	/* min-height: 50mm; */
+}
+
+.single {
+	width: 100%;
+}
+
+.name,
+.age,
+.time {
+	font-weight: bold;
+}
+
+.age {
+	font-size: smaller;
+}
+
+.time {
+	font-size: smaller;
+	color: #FFF3CF;
+}
+
+.subclub {
+	font-size: smaller;
+	background: #97D194;
+	border-radius: 3mm;
+	padding: 1mm;
+	margin-top: 1mm;
+}
+
+/* Auxiliary container
+for double clubs in a col */
+
+.aux_cont {
+	/* width: 10cqmax; */
+	/* max-width: min-content; */
+}
+
+/* Colour definitions for clubs */
+
+.prodlenka {
+	background: #BDA9F4;
+}
+
+.minors {
+	background: #8B7DFF;
+}
+
+.bk1 {
+	background: #F4A0A0;
+}
+
+.bk3 {
+	background: #677BFF;
+}
+
+.babyk1 {
+	background: #FF9AD8;
+}
+.babyk2 {
+	background: #FFCA99;
+}
+
+.english {
+	background: #87D1DB;
+}

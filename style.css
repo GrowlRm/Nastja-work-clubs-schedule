@@ -1,7 +1,5 @@
 body {
-	font-family: Roboto;
-}
-.flexbox {
+	font-family: Open Sans;
 }
 .item {
 	margin: .25rem;
@@ -12,13 +10,19 @@ body {
 	flex-direction: row;
 	justify-content: space-evenly;
 }
-.clubs_collection {
-	/*background-color: #D5D5D5;*/
-}
 .children {
 	flex-wrap: wrap;
 	justify-content: safe left;
 	margin-top: .25rem;
+}
+.child {
+	width: auto;
+	font-size: smaller;
+	/*background-color: #ADF0A3;*/
+	margin: .25rem;
+	border-radius: .8rem;
+	border: solid .1rem;
+	padding: .15rem .4rem;
 }
 .uncertain {
 	font-style: italic;
@@ -28,14 +32,6 @@ body {
 	/*background-color: #f1f1f1;*/
 	width: auto;
 	padding: .5rem;
-}
-.child {
-	width: auto;
-	/*background-color: #ADF0A3;*/
-	margin: .25rem;
-	border-radius: .8rem;
-	border: solid .1rem;
-	padding: .15rem .4rem;
 }
 .flexbox > div {
 	background-color: #f1f1f1;
