@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap');
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 100px) {
 	.days_container {
 		margin: 0;
 	}
+
+	img {
+		width: auto;
+		max-height: 101vh;
+	}
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1313px) {
 	.days_container {
 		margin: auto 6%;
+	}
+	
+	img {
+		max-width: 101.5cqmax;
+		max-height: none;
 	}
 }
 
@@ -26,10 +36,12 @@
 		min-height: 82mm;
 		grid-template-rows: 8fr 7fr 8fr;
 	}
+
 	img {
-		width: 101.5cqmax;
-		max-height: none;
+		max-width: 101.5cqmax;
+		min-height: 100vh;
 	}
+
 	.days_container {
 		margin: auto 6%;
 	}
@@ -53,6 +65,9 @@
 	#logopaed {
 		margin-top: 4mm;
 	}
+	img {
+		max-width: 101.5cqmax;
+	}
 }
 
 body {
@@ -71,8 +86,7 @@ body::-webkit-scrollbar {
 img {
 	position: fixed;
 	display: block;
-	width: 101.5cqmax;
-	/* max-height: 101vh; */
+	/* max-width: 101.5cqmax; */
 	display: block;
 	margin-left: -2vh;
 	margin-top: -2vh;
@@ -122,9 +136,9 @@ img {
 .clubs_container_grid_2x2 {
 	display: grid;
 	grid-template-areas:
-	"frs snd"
-	"frs snda"
-	"frs thd";
+		"frs snd"
+		"frs snda"
+		"frs thd";
 	grid-template-columns: 1fr 1fr;
 }
 
@@ -146,9 +160,9 @@ img {
 .clubs_container_grid_1x1 {
 	display: grid;
 	grid-template-areas:
-	"frs nul"
-	"frs snd"
-	"frs nu";
+		"frs nul"
+		"frs snd"
+		"frs nu";
 	grid-template-columns: 1fr 1fr;
 	/* min-height: none; */
 }
