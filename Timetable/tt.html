@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -11,216 +11,210 @@
 <body>
 	<img src="bg@4x.png" alt="background image">
 	<br>
-	<div class="timetable">
+	<div class="days_container">
 		<div class="day"> <!-- Mon -->
 			<div class="day_name">Понедельник</div>
-			<div class="flex_group">
-				<div class="club">
-					<div class="name">Бэби-сад</div>
-					<div class="age">3-7 лет</div>
-					<div class="time">9:00 - 13:00</div>
-					<div class="subclub">
-						<div class="name">БК 2</div>
-						<div class="age">3,5-4,5 года</div>
-						<div class="time">9:30 - 11:00</div>
+			<div class="clubs_container">
+				<div class="clubs_container_grid_1x1">
+					<div class="club ">
+						<div class="name">Бэби-сад</div>
+						<div class="age">3-7 лет</div>
+						<div class="time">9:00 - 13:00</div>
+						<div class="club col_bk2">
+							<div class="name">БК 2</div>
+							<div class="age">3,5-4,5 года</div>
+							<div class="time">9:30 - 11:00</div>
+						</div>
+					</div>
+					<div class="club col_bk1">
+						<div class="name">БК 1</div>
+						<div class="age">2-3 года</div>
+						<div class="time">10:00 - 11:45</div>
 					</div>
 				</div>
-				<div class="club bk1">
-					<div class="name">БК 1</div>
-					<div class="age">2-3 года</div>
-					<div class="time">10:30 - 11:45</div>
-				</div>
-			</div>
-			<div class="flex_group">
-				<div class="club prodlenka">
-					<div class="name">Продлёнка</div>
-					<div class="age">3-7 лет</div>
-					<div class="time">13:00 - 17:00</div>
-					<div class="subclub minors">
-						<div class="name">Прикладное искусство</div>
-						<div class="time">14:30 - 15:15</div>
+				<div class="clubs_container_grid_1x1">
+					<div class="club col_prodlenka">
+						<div class="name">Продлёнка</div>
+						<div class="age">3-7 лет</div>
+						<div class="time">13:00 - 17:00</div>
+						<div class="club col_minors">
+							<div class="name">Прикладное<br>искусство</div>
+							<div class="time">14:30 - 15:15</div>
+						</div>
+					</div>
+					<div class="club col_babylin1">
+						<div class="name">Бэбик 1</div>
+						<div class="age">8 мес. - 1 год</div>
+						<div class="time">14:30 - 15:30</div>
 					</div>
 				</div>
-				<div class="club babyk1">
-					<div class="name">Бэбик 1</div>
-					<div class="age">8 мес. - 1 год</div>
-					<div class="time">14:30 - 15:30</div>
-				</div>
-			</div>
-			<div class="flex_group height_restr_raised">
-				<div class="club single babyk2">
+				<div class="club col_babylin2">
 					<div class="name">Бэбик 2</div>
-					<div class="age">1,5 года - 2,5 года</div>
+					<div class="age">1,5-2,5 года</div>
 					<div class="time">17:15 - 18:15</div>
 				</div>
 			</div>
 		</div>
 		<div class="day"> <!-- Tue -->
 			<div class="day_name">Вторник</div>
-			<div class="flex_group">
+			<div class="clubs_container_grid_2x2">
 				<div class="club">
 					<div class="name">Бэби-сад</div>
 					<div class="age">3-7 лет</div>
 					<div class="time">9:00 - 13:00</div>
-					<div class="subclub bk3">
+					<div class="club col_bk3">
 						<div class="name">БК 3</div>
 						<div class="age">4,5-5,5 лет</div>
 						<div class="time">10:00 - 11:30</div>
 					</div>
-					<div class="subclub minors">
+					<div class="club col_minors">
 						<div class="name">ЛОГОПЕД</div>
 					</div>
 				</div>
-				<div class="aux_cont">
-					<div class="club babyk1" style="width: auto;">
-						<div class="name">Бэбик 1</div>
-						<div class="age">1-1,5 года</div>
-						<div class="time">9:30 - 10:30</div>
-					</div>
-					<div class="club english" style="width: auto;">
-						<div class="name">ENGLISH</div>
-						<div class="time">12:00 - 12:45</div>
-					</div>
+				<div class="club col_babylin1">
+					<div class="name">Бэбик 1</div>
+					<div class="age">1-1,5 года</div>
+					<div class="time">9:30 - 10:30</div>
+				</div>
+				<div class="club col_english">
+					<div class="name">ENGLISH</div>
+					<div class="time">12:00 - 12:45</div>
 				</div>
 			</div>
-			<div class="flex_group">
-				<div class="club single prodlenka">
+			<div class="clubs_container_grid_1x1">
+				<div class="club col_prodlenka">
 					<div class="name">Продлёнка</div>
 					<div class="age">3-7 лет</div>
 					<div class="time">13:00 - 17:00</div>
-					<div class="subclub minors">
+					<div class="club col_minors">
 						<div class="name">Песочная терапия</div>
 						<div class="time">14:30 - 15:15</div>
 					</div>
 				</div>
 			</div>
-			<div class="flex_group height_restr_raised">
-				<div class="club single bk1">
-					<div class="name">БК 1</div>
-					<div class="age">2,5 года - 3,5 года</div>
-					<div class="time">17:15 - 18:15</div>
-				</div>
+			<div class="club col_bk1">
+				<div class="name">БК 1</div>
+				<div class="age">2,5-3,5 года</div>
+				<div class="time">17:15 - 18:15</div>
 			</div>
 		</div>
 		<div class="day"> <!-- Wed -->
 			<div class="day_name">Среда</div>
-			<div class="flex_group">
-				<div class="club">
-					<div class="name">Бэби-сад</div>
-					<div class="age">3-7 лет</div>
-					<div class="time">9:00 - 13:00</div>
-					<div class="subclub">
-						<div class="name">БК 2</div>
-						<div class="age">3,5-4,5 года</div>
-						<div class="time">9:30 - 11:00</div>
+			<div class="clubs_container">
+				<div class="clubs_container_grid_1x1">
+					<div class="club">
+						<div class="name">Бэби-сад</div>
+						<div class="age">3-7 лет</div>
+						<div class="time">9:00 - 13:00</div>
+						<div class="club col_bk2">
+							<div class="name">БК 2</div>
+							<div class="age">3,5-4,5 года</div>
+							<div class="time">9:30 - 11:00</div>
+						</div>
+					</div>
+					<div class="club col_bk1">
+						<div class="name">БК 1</div>
+						<div class="age">2-3 года</div>
+						<div class="time">10:00 - 11:45</div>
 					</div>
 				</div>
-				<div class="club bk1">
-					<div class="name">БК 1</div>
-					<div class="age">2-3 года</div>
-					<div class="time">10:30 - 11:45</div>
-				</div>
-			</div>
-			<div class="flex_group">
-				<div class="club prodlenka">
-					<div class="name">Продлёнка</div>
-					<div class="age">3-7 лет</div>
-					<div class="time">13:00 - 17:00</div>
-					<div class="subclub minors">
-						<div class="name">Бэби-мульти-пликация</div>
-						<div class="time">14:30 - 15:15</div>
+				<div class="clubs_container_grid_1x1">
+					<div class="club col_prodlenka">
+						<div class="name">Продлёнка</div>
+						<div class="age">3-7 лет</div>
+						<div class="time">13:00 - 17:00</div>
+						<div class="club col_minors">
+							<div class="name">Бэби-<br>мультипликация</div>
+							<div class="time">14:30 - 15:15</div>
+						</div>
+					</div>
+					<div class="club col_babylin1">
+						<div class="name">Бэбик 1</div>
+						<div class="age">8 мес. - 1 год</div>
+						<div class="time">14:30 - 15:30</div>
 					</div>
 				</div>
-				<div class="club babyk1">
-					<div class="name">Бэбик 1</div>
-					<div class="age">8 мес. - 1 год</div>
-					<div class="time">14:30 - 15:30</div>
-				</div>
-			</div>
-			<div class="flex_group height_restr_raised">
-				<div class="club single babyk2">
+				<div class="club col_babylin2">
 					<div class="name">Бэбик 2</div>
-					<div class="age">1,5 года - 2,5 года</div>
+					<div class="age">1,5-2,5 года</div>
 					<div class="time">17:15 - 18:15</div>
 				</div>
 			</div>
 		</div>
 		<div class="day"> <!-- Thu -->
 			<div class="day_name">Четверг</div>
-			<div class="flex_group">
+			<div class="clubs_container_grid_2x2">
 				<div class="club">
 					<div class="name">Бэби-сад</div>
 					<div class="age">3-7 лет</div>
 					<div class="time">9:00 - 13:00</div>
-					<div class="subclub bk3">
+					<div class="club col_bk3">
 						<div class="name">БК 3</div>
 						<div class="age">4,5-5,5 лет</div>
 						<div class="time">10:00 - 11:30</div>
 					</div>
 				</div>
-				<div class="aux_cont">
-					<div class="club babyk1" style="width: auto;">
-						<div class="name">Бэбик 1</div>
-						<div class="age">1-1,5 года</div>
-						<div class="time">9:30 - 10:30</div>
-					</div>
-					<div class="club english" style="width: auto;">
-						<div class="name" style="font-size: smaller;">Хореография</div>
-						<div class="time">12:00 - 12:40</div>
-					</div>
+				<div class="club col_babylin1">
+					<div class="name">Бэбик 1</div>
+					<div class="age">1-1,5 года</div>
+					<div class="time">9:30 - 10:30</div>
+				</div>
+				<div class="club col_choreogr">
+					<div class="name">Хореография</div>
+					<div class="time">12:00 - 12:40</div>
 				</div>
 			</div>
-			<div class="flex_group">
-				<div class="club single prodlenka">
+			<div class="clubs_container_grid_1x1">
+				<div class="club col_prodlenka">
 					<div class="name">Продлёнка</div>
 					<div class="age">3-7 лет</div>
 					<div class="time">13:00 - 17:00</div>
-					<div class="subclub minors">
+					<div class="club col_minors">
 						<div class="name">Бэби-театр</div>
 						<div class="time">14:30 - 15:15</div>
 					</div>
 				</div>
 			</div>
-			<div class="flex_group height_restr_raised">
-				<div class="club single bk1">
-					<div class="name">БК 1</div>
-					<div class="age">2,5 года - 3,5 года</div>
-					<div class="time">17:15 - 18:15</div>
-				</div>
+			<div class="club col_bk1">
+				<div class="name">БК 1</div>
+				<div class="age">2,5-3,5 года</div>
+				<div class="time">17:15 - 18:15</div>
 			</div>
 		</div>
 		<div class="day"> <!-- Fri -->
 			<div class="day_name">Пятница</div>
-			<div class="flex_group">
-				<div class="club">
-					<div class="name">Бэби-сад</div>
-					<div class="age">3-7 лет</div>
-					<div class="time">9:00 - 13:00</div>
-					<div class="subclub minors">
-						<div class="name">ЛОГОПЕД</div>
+			<div class="clubs_container">
+				<div class="clubs_container_grid_1x1">
+					<div class="club">
+						<div class="name">Бэби-сад</div>
+						<div class="age">3-7 лет</div>
+						<div class="time">9:00 - 13:00</div>
+						<div class="club col_minors">
+							<div class="name">ЛОГОПЕД</div>
+						</div>
+					</div>
+					<div class="club col_english">
+						<div class="name">ENGLISH</div>
+						<div class="time">12:00 - 12:45</div>
 					</div>
 				</div>
-				<div class="club english">
-					<div class="name">ENGLISH</div>
-					<div class="time">12:00 - 12:45</div>
-				</div>
-			</div>
-			<div class="flex_group">
-				<div class="club single prodlenka">
-					<div class="name">Продлёнка</div>
-					<div class="age">3-7 лет</div>
-					<div class="time">13:00 - 17:00</div>
-					<div class="subclub minors">
-						<div class="name">Бэби-конструирование</div>
-						<div class="time">14:30 - 15:15</div>
+				<div class="clubs_container_grid_1x1">
+					<div class="club col_prodlenka">
+						<div class="name">Продлёнка</div>
+						<div class="age">3-7 лет</div>
+						<div class="time">13:00 - 17:00</div>
+						<div class="club col_minors">
+							<div class="name">Бэби-<br>конструирование</div>
+							<div class="time">14:30 - 15:15</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="day"> <!-- Sat -->
+		<div class="day saturday"> <!-- Sat -->
 			<div class="day_name">Суббота</div>
-			<div class="flex_group">
-				<div class="club single babyk2">
+			<div class="clubs_container">
+				<div class="club col_babylin2">
 					<div class="name">Бэбик 2</div>
 					<div class="age">1,5-2,5 года</div>
 					<div class="time">10:30 - 11:30</div>

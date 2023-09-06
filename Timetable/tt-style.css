@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap');
+
 body {
-	font-family: Open Sans;
-	/* font-size: 16pt; */
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 20pt;
+	font-weight: 800;
 	background: #B5DCFC;
 }
+
 
 /* Background image */
 
@@ -16,117 +20,104 @@ img {
 	z-index: -1;
 }
 
-/* In which tags to center the text */
-.timetable {
-	/* border: solid; */
+.days_container {
+	margin: auto 8%;
 	display: flex;
-	justify-content: space-evenly;
+	grid-template-columns: repeat(6, 1fr);
 	flex-wrap: wrap;
-	/* height: 90vh; */
+	text-align: center;
 }
 
 .day {
-	text-align: center;
-	/* max-width: 16cqmax; */
-	min-width: 30cqmax;
+	/* display: grid; */
+	grid-area: day;
 	background: rgba(255, 255, 255, .4);
-	border-radius: 3mm;
+	border-radius: 2mm;
+	flex-grow: 2;
+	color: white;
+	margin: 2mm;
 	padding: 2mm;
-	margin: 1mm;
-	/* height: 90vh; */
+}
+
+.club {
+	font-size: 14pt;
+	font-weight: 700;
+	border-radius: 2mm;
+	padding: 1mm;
+	margin: 0 1mm 2mm 1mm;
+	background: #9DA7EF;
+}
+
+.club > .club {
+	font-size: smaller;
 }
 
 .day_name {
 	background: #FBB81F;
 	border-radius: 2mm;
-	padding: 1mm;
-	font-size: larger;
-	font-weight: bold;
-	color: white;
+	margin-bottom: 2mm;
 }
 
-.flex_group {
-	display: flex;
-	justify-content: space-between;
-	/* border: solid #FBB81F; */
-	/* min-height: 170px; */
+.saturday {
+	flex-grow: 1;
 }
 
-.height_restr_raised {
-	min-height: auto;
+.clubs_container_grid_2x2 {
+	display: grid;
+	grid-template-areas: "frs snd" "frs thd";
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 }
 
-.club {
-	background: #9DA7EF;
-	color: white;
-	padding: 1.5mm;
-	margin: auto .5mm;
-	margin-top: 1mm;
-	min-width: 10cqmax;
-	border-radius: 3mm;
-	/* min-height: 50mm; */
+.clubs_container_grid_2x2>.club:nth-child(1) {
+	grid-area: frs;
+	/* background: #f98bfd; */
 }
 
-.single {
-	width: 100%;
+.clubs_container_grid_2x2>.club:nth-child(2) {
+	grid-area: snd;
+	/* background: #7be483; */
 }
 
-.name,
-.age,
-.time {
-	font-weight: bold;
+.clubs_container_grid_2x2>.club:nth-child(3) {
+	grid-area: thd;
+	/* background: #fd8b8b; */
+}
+
+.clubs_container_grid_1x1 {
+	display: grid;
+	grid-template-areas: "frs nul" "frs snd" "frs nu";
+	grid-template-rows: 1fr 3fr 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+
+.clubs_container_grid_1x1>.club:nth-child(1) {
+	grid-area: frs;
+	/* background: #8bddfd; */
+}
+
+.clubs_container_grid_1x1>.club:nth-child(2) {
+	grid-area: snd;
+	/* background: #e4c37b; */
 }
 
 .age {
-	font-size: smaller;
+	font-size: 11pt;
 }
 
 .time {
-	font-size: smaller;
+	font-size: 10pt;
 	color: #FFF3CF;
 }
 
-.subclub {
-	font-size: smaller;
-	background: #97D194;
-	border-radius: 3mm;
-	padding: 1mm;
-	margin-top: 1mm;
-}
+/* Group colours */
 
-/* Auxiliary container
-for double clubs in a col */
-
-.aux_cont {
-	/* width: 10cqmax; */
-	/* max-width: min-content; */
-}
-
-/* Colour definitions for clubs */
-
-.prodlenka {
-	background: #BDA9F4;
-}
-
-.minors {
-	background: #8B7DFF;
-}
-
-.bk1 {
-	background: #F4A0A0;
-}
-
-.bk3 {
-	background: #677BFF;
-}
-
-.babyk1 {
-	background: #FF9AD8;
-}
-.babyk2 {
-	background: #FFCA99;
-}
-
-.english {
-	background: #87D1DB;
-}
+.col_prodlenka {background: #BDA9F4;}
+.col_babylin1 {background: #FF9AD8;}
+.col_babylin2 {background: #FFCA99;}
+.col_bk1 {background: #F4A0A0;}
+.col_bk2 {background: #97D194;}
+.col_bk3 {background: #677BFF;}
+.col_minors {background: #8B7DFF;}
+.col_english {background: #87D1DB;}
+.col_choreogr {background: #98D2F6;}
