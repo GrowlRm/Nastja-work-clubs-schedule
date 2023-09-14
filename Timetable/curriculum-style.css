@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap');
+
+@media screen and (min-width: 100px) {}
+
+@media screen and (min-width: 1614px) {
+	.container {
+		margin: .5em 6%;
+	}
+}
+
+@media print {
+	.container {
+		margin: .5em 3%;
+	}
+}
+
+body {
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-weight: 800;
+	background: #B5DCFC;
+}
+
+.container {
+	background: rgba(255, 255, 255, .3);
+	padding: .5em;
+}
+
+.curriculum {
+	display: grid;
+	flex-direction: column;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(6, 1fr);
+	gap: .5em;
+	grid-auto-flow: column;
+}
+
+.curr_el {
+	background: #ffa0a0;
+	border-radius: 2em;
+}
+
+.curr_el>div {
+	margin: 2mm 5mm;
+	gap: 2mm;
+}
+
+.timebox {
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.timebox>.time {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 250%;
+	min-width: 175px;
+}
+
+.info {
+	font-weight: 500;
+	/* line-height: 1; */
+}
+
+h1 {
+	text-align: center;
+	background: rgba(255, 255, 255, .5);
+	margin: 0 0 2mm 0;
+}
+
+/* Таблица внизу */
+
+.curr_table {
+	display: flex;
+	grid-template-columns: repeat(5, 1fr);
+	/* grid-template-rows: 1fr repeat(3,3fr); */
+	gap: .5em;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	font-weight: 500;
+	text-align: center;
+}
+
+.day {
+	flex-grow: 1;
+}
+
+.club {
+	background: #e6b87d;
+	margin: .5em 0;
+}
+
+.club>.time {
+	font-size: 220%;
+	font-weight: 800;
+}
+
+.club.empty {
+	color: rgba(0, 0, 0, 0.6);
+	background: rgba(230, 184, 125, .4);
+}
