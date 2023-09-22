@@ -1,50 +1,66 @@
 body {
-	font-family: Open Sans;
+	font-family: Roboto;
 }
+
+.flexbox {}
+
 .item {
 	margin: .25rem;
 	min-width: 12rem;
 }
-.flexbox, .children {
+
+.flexbox,
+.children {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
+
+.clubs_collection {
+	/*background-color: #D5D5D5;*/
+}
+
 .children {
 	flex-wrap: wrap;
 	justify-content: safe left;
 	margin-top: .25rem;
 }
+
+.uncertain {
+	font-style: italic;
+	color: #B6DEE4;
+}
+
+.flexbox>div {
+	/*background-color: #f1f1f1;*/
+	width: auto;
+	padding: .5rem;
+}
+
 .child {
 	width: auto;
-	font-size: smaller;
 	/*background-color: #ADF0A3;*/
 	margin: .25rem;
 	border-radius: .8rem;
 	border: solid .1rem;
 	padding: .15rem .4rem;
 }
-.uncertain {
-	font-style: italic;
-	color: #B6DEE4;
-}
-.flexbox > div {
-	/*background-color: #f1f1f1;*/
-	width: auto;
-	padding: .5rem;
-}
-.flexbox > div {
+
+.flexbox>div {
 	background-color: #f1f1f1;
 }
+
 .day_name {
 	font-size: 40pt;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #4F504F;
 }
+
 .className {
 	font-size: large;
 }
+
 .club {
 	background-color: #ffffff;
 	/*border-radius: .8rem;*/
@@ -54,14 +70,46 @@ body {
 }
 
 /*Groups colouring*/
-#kindr {border-top: solid .4rem #CF499D;}
-#babylin1 {border-top: solid .4rem #FFE996;}
-#babylin2 {border-top: solid .4rem #FBC90D;}
-#babyclass1 {border-top: solid .4rem #86E486;}
-#babyclass2 {border-top: solid .4rem #37CC37;}
-#babyclass3 {border-top: solid .4rem #0BC90B;}
-#logo {border-top: solid .4rem #B6DEE4;}
-#afterschool {border-top: solid .4rem #FFFA62;}
-#pks {border-top: solid .4rem #FF4545;}
-#english {border-top: solid .4rem #301FAE;}
-#kindr_music {border-top: solid .4rem #BA0075;}
+#kindr {
+	border-top: solid .4rem #CF499D;
+}
+
+#babylin1 {
+	border-top: solid .4rem #FFE996;
+}
+
+#babylin2 {
+	border-top: solid .4rem #FBC90D;
+}
+
+#babyclass1 {
+	border-top: solid .4rem #86E486;
+}
+
+#babyclass2 {
+	border-top: solid .4rem #37CC37;
+}
+
+#babyclass3 {
+	border-top: solid .4rem #0BC90B;
+}
+
+#logo {
+	border-top: solid .4rem #B6DEE4;
+}
+
+#afterschool {
+	border-top: solid .4rem #FFFA62;
+}
+
+#pks {
+	border-top: solid .4rem #FF4545;
+}
+
+#english {
+	border-top: solid .4rem #301FAE;
+}
+
+#kindr_music {
+	border-top: solid .4rem #BA0075;
+}
